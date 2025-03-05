@@ -14,5 +14,3 @@ document.addEventListener('DOMContentLoaded', function () {
     xmarkIcon.classList.add('hidden');
 });
 
-
-// Testimonial 
