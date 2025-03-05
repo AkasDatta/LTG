@@ -14,46 +14,5 @@ document.addEventListener('DOMContentLoaded', function () {
     xmarkIcon.classList.add('hidden');
 });
 
-/////
-const testimonials = [
-    {
-        text: "“I'm a testimonial. Click to edit me and add text that says something nice about you and your services.”",
-        author: "Jason Strauss <br> CEO of ML Associates"
-    },
-    {
-        text: "“Great service! I highly recommend them for any business needs.”",
-        author: "Sarah Johnson <br> Founder of Startup Co."
-    },
-    {
-        text: "“Amazing experience, would love to work with them again!”",
-        author: "Mike Lee <br> Marketing Head at XYZ"
-    }
-];
 
-let index = 0;
-const textElement = document.getElementById("testimonialText");
-const authorElement = document.getElementById("author");
-const dots = document.querySelectorAll(".dot");
-
-function updateTestimonial() {
-    textElement.innerHTML = testimonials[index].text;
-    authorElement.innerHTML = testimonials[index].author;
-    dots.forEach((dot, i) => dot.classList.toggle("bg-blue-500", i === index));
-}
-
-document.getElementById("prevBtn").addEventListener("click", () => {
-    index = (index - 1 + testimonials.length) % testimonials.length;
-    updateTestimonial();
-});
-
-document.getElementById("nextBtn").addEventListener("click", () => {
-    index = (index + 1) % testimonials.length;
-    updateTestimonial();
-});
-
-setInterval(() => {
-    index = (index + 1) % testimonials.length;
-    updateTestimonial();
-}, 5000);
-
-updateTestimonial();
+// Testimonial 
