@@ -12,6 +12,7 @@
     
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+
     </head>
 <body>
       <!-- Navbar -->
@@ -126,7 +127,7 @@
                 </div>
               </div>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-6 md:px-24 xl:px-60 gap-14 md:gap-12 pt-12 md:pt-28 lg:pt-0">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-6 md:px-24 xl:px-60 gap-14 md:gap-12 pt-12 md:pt-28 lg:pt-0 pb-0">
             <div class="relative block h-64 sm:h-80 lg:h-96">
                 <span class="absolute inset-0 border-4 translate-x-3 -translate-y-32 border-[#F4F4F4] h-64 sm:h-80 lg:h-72"></span>
   
@@ -166,6 +167,36 @@
         </div>
     </div>
 
+
+    <!-- Testimonial  -->
+    <div class="px-6 md:px-24 xl:px-60 py-10 bg-[#F2F2F2]">
+        <h2 class="text-3xl text-[#1A2B6D] text-center">Testimonials</h2>
+        <div class="grid grid-cols-3 items-center gap-4">
+            <button id="prevBtn" class="text-3xl text-[#1A2B6D]">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <div class="text-center">
+                <h1 id="testimonialText" class="text-3xl lg:text-4xl text-[#1A2B6D] py-8">
+                    “I'm a testimonial. Click to edit me and add text that says something nice about you and your services.”
+                </h1>
+                <p id="author" class="text-red-500 text-xl">
+                    Jason Strauss <br> CEO of ML Associates
+                </p>
+                <div class="flex justify-center gap-2 mt-4">
+                    <span class="dot w-3 h-3 bg-gray-400 rounded-full cursor-pointer"></span>
+                    <span class="dot w-3 h-3 bg-gray-400 rounded-full cursor-pointer"></span>
+                    <span class="dot w-3 h-3 bg-gray-400 rounded-full cursor-pointer"></span>
+                </div>
+            </div>
+            <button id="nextBtn" class="text-3xl text-[#1A2B6D]">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+    
+
+    
+
      <!-- Ready to find -->
      <div class="w-full px-6 md:px-24 xl:px-60 pt-20 pb-48">
         <div class="bg-[#F4F4F4] p-10 lg:px-32 lg:py-16 ">
@@ -192,14 +223,6 @@
     </div>
     
     
-    
-    
-    
-    
- 
-    
-
-
     <!-- JavaScript -->
     <script src="./js/script.js"></script>
 </body>
